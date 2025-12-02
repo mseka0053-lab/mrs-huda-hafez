@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "محمد السيد",
+    "grade": "الصف الأول الإعدادي",
+    "unitProgress": {
+      "1": { "درس1": true, "درس2": false, "درس3": false, "درس4": false },
+      "2": { "درس1": false, "درس2": false, "درس3": false, "درس4": false },
+      "3": { "درس1": false, "درس2": false, "درس3": false, "درس4": false }
+    },
+    "assignments": {
+      "درس1": "مكتمل",
+      "درس2": "غير مكتمل"
+    },
+    "exams": {
+      "درس1": 85,
+      "درس2": 0
+    }
+  },
+  {
+    "id": 2,
+    "name": "زهراء",
+    "grade": "الصف الأول الإعدادي",
+    "unitProgress": {
+      "1": { "درس1": true, "درس2": true, "درس3": false, "درس4": false },
+      "2": { "درس1": false, "درس2": false, "درس3": false, "درس4": false },
+      "3": { "درس1": false, "درس2": false, "درس3": false, "درس4": false }
+    },
+    "assignments": {},
+    "exams": {}
+  }
+]

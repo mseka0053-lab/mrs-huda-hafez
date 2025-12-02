@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    background: #f5f7fa;
+}
+
+/* الهيدر */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom right, #4ba3f2, #1d70b8);
+    color: #fff;
+}
+
+.hero .start-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #fff;
+    color: #1d70b8;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* العناوين */
+.subjects h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* الكروت */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* الكارد الرئيسي */
+.stage-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #1d70b8;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #f5f7fa;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.stage-card:hover {
+    transform: scale(1.04);
+}
+
+/* الصورة داخل الزر */
+.stage-img {
+    width: 100%;
+    height: 150px;              /* 🔥 الحجم المناسب */
+    background-size: cover;     /* 🔥 يخلي الصورة تملا المساحة مظبوطة */
+    background-position: center;
+}
+
+/* النص */
+.stage-card span {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.stage-card-sginout {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    background: #fff;
+    color: #1d70b8;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.stage-card-sginout:hover {
+     transform: scale(1.04);
+}

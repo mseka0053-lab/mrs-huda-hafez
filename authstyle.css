@@ -1,0 +1,72 @@
+/* ===========================
+   إعدادات عامة للجسم
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
+    margin: 0;
+    direction: rtl;
+    text-align: center;
+}
+
+/* ===========================
+   الهيدر
+=========================== */
+.hero {
+    background: linear-gradient(#007bff, #0056d6);
+    color: white;
+    padding: 80px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+   الأزرار العامة
+=========================== */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+
+    /* تأثير الزجاج */
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+/* ===========================
+   المواد والكروت
+=========================== */
+.subjects {
+    padding: 40px 20px;
+}
+
+.cards {
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #0056d6;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ffffff;
+    text-align: center;
+}

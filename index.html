@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - التفوق في العلوم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass login-box">
+    <h2>تسجيل الدخول</h2>
+    <input type="text" placeholder="اسم المستخدم" id="username">
+    <input type="password" placeholder="كلمة المرور" id="password">
+    <button class="btn" id="login-btn">دخول</button>
+    <p>ليس لديك حساب؟ <a href="signup.html">إنشاء حساب</a></p>
+</div>
+
+<script>
+const loginBtn = document.getElementById('login-btn');
+loginBtn.addEventListener('click', () => {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+
+    let users = JSON.parse(localStorage.getItem('users') || "[]");
+    let user = users.find(u => u.username === username && u.password === password);
+
+    if(user){
+        alert("تم تسجيل الدخول بنجاح!");
+        window.location.href = "home.html";
+    } else {
+        alert("اسم المستخدم أو كلمة المرور غير صحيحة!");
+    }
+});
+</script>
+
+</body>
+</html>
